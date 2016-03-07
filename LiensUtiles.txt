@@ -1,0 +1,5 @@
+/// Liens de documentation importants
+
+------ COMMENTAIRES ------
+Structure des commentaires usuels en Java, un peu différent qu'en Python
+https://en.wikipedia.org/wiki/Javadoc#Structure_of_a_Javadoc_comment
