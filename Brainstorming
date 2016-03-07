@@ -1,0 +1,21 @@
+/// Résumé de nos décisions par rapport au projet of course
+
+
+----------- DEADLINES -----------
+11 Mars --> Soumission du groupe  à mwaumans@ulb.ac.be
+25 Mars --> Soumission du rapport préliminaire (analyse fonctionnelle)
+06 Mai --> Soumission du projet et du rapport final (INFOH200_Projet)
+
+------------ CONCEPT ------------
+
+/// Elements à implémenter pour commencer, consignes obligatoires (à mettre à jour en fonction du prof)
+
+ --> Menu principal
+ Devra être modifiable in-game : la taille de la grille
+ Implémentation obligatoire : Inventaire, Interface graphique complète, Attaque corps-à-corps, ennemis aggressifs, loot,
+ 
+++ APPLICATION DES CONCEPTS (Héritage, Encapsulation, Exceptions, Interfaces,
+Généricité, Polymorphisme, Design patterns, Threads)
+
+--> Dans le jeu
+  Vision fenêtrée, centrée sur le héro
