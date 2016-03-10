@@ -64,7 +64,7 @@ public class Player {
 		 * follow a linear progression (prototype!!!)
 		 */
 		
-		int Next_level_req = 50 + 10*PlayerLevel;
+		int Next_level_req = 50 + 10*(PlayerLevel -1);
 		
 		if(XP + XP_brought >= Next_level_req) {
 			this.PlayerLevel ++;                             // LEVEL UP!
