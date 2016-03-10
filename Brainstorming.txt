@@ -2,7 +2,7 @@
 
 
 ----------- DEADLINES -----------
-11 Mars --> Soumission du groupe  à mwaumans@ulb.ac.be
+11 Mars --> Soumission du groupe  à mwaumans@ulb.ac.be // DONE
 25 Mars --> Soumission du rapport préliminaire (analyse fonctionnelle)
 06 Mai --> Soumission du projet et du rapport final (INFOH200_Projet)
 
@@ -14,8 +14,17 @@
  Devra être modifiable in-game : la taille de la grille
  Implémentation obligatoire : Inventaire, Interface graphique complète, Attaque corps-à-corps, ennemis aggressifs, loot,
  
-++ APPLICATION DES CONCEPTS (Héritage, Encapsulation, Exceptions, Interfaces,
-Généricité, Polymorphisme, Design patterns, Threads)
+++ APPLICATION DES CONCEPTS : 
+a) Héritage + use "final" si la méthode ne doit pas changer dans les sous-classes;
+b) Encapsulation = classe ne faisant appel qu'à ces propres méthodes;
+c) Exceptions;
+d) Interfaces = cas particulier des classes abstraites qui ne reprend que les méthodes publique de ses filles;
+e) Généricité;
+f) Polymorphisme et classes abstraites = pas d'instance;
+g) Design patterns;
+h) Threads = simultanéité;
+i) Méthodes statiques = méthode qui s'applique sur la classe entière (ex : la méthode "DaysInJanuary" de la classe "Date" est statique car le nombre de jour en janvier ne dépend pas de la date actuelle);
+j) (GarbageCollector via finalize). 
 
 --> Dans le jeu
   Vision fenêtrée, centrée sur le héro
