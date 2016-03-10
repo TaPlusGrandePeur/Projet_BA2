@@ -58,16 +58,22 @@ public class Player {
 	
 	// ########################### LEVEL UP SYSTEM #########################
 	
-	private int NewLevel(int XP_brought){
+	private void NewLevel(int XP_brought){
 		/*
 		 * DESC : Private method which will regulate the level-up system regarding the current XP the player has, the leveling system
 		 * follow a linear progression (prototype!!!)
 		 */
 		
-		int XP_left;
-		int Next_level_req = 50 + Math.log(this.PlayerLevel);
+		int Next_level_req = 50 + 10*PlayerLevel;
 		
-
+		if(XP + XP_brought >= Next_level_req) {
+			this.PlayerLevel ++;                             // LEVEL UP!
+			this.XP = (XP + XP_brought) - Next_level_req  ;  // We don't want to lose the remaining XP earned
+			
+		}
+		
+		else {
+			this.XP = (XP + XP_brought);                    //Simple addition of XP's 
 			
 		}
 		
