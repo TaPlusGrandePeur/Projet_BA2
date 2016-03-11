@@ -13,7 +13,8 @@ import java.util.ArrayList;
 public class Main {
 	// Class body, Main program function, 
 	public static void main(String Args[]){
-		
+		Player Neil = new Player();
+		System.out.println(Neil.get_HP());
 	}
 
 }

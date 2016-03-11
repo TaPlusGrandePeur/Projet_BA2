@@ -6,7 +6,7 @@ import java.math.*; 	//En général ils (les assistants) aiment pas trop qu'on imp
 			//des noms de variables qu'on pourrait utiliser qui appartiendraient déjà à "math"
 import java.util.Random; //utile pour les points de skills lorsqu'on monte d'un niveau (ligne 30)
 
-public class Player extends Character {
+public class Monsters extends Character {
 	
 	/*
 	 * Player class, when a new game is launched, a new instance of the player is created, all skills, and inventory
@@ -14,27 +14,27 @@ public class Player extends Character {
 	
 	// ################# Declaration of player variable #################### 
 	
-	private int xp;               // Experience points
+	private int XP;               // Experience points
 		
 	// ########################### level UP SYSTEM #########################
 	
-	private void Newlevel(int xp_brought){
+	private void Newlevel(int XP_brought){
 		/*
-		 * DESC : Private method which will regulate the level-up system regarding the current xp the player has, the leveling system
+		 * DESC : Private method which will regulate the level-up system regarding the current XP the player has, the leveling system
 		 * follow a linear progression (prototype!!!)
 		 */
 		
 		int Next_level_req = 50 + 10*(level -1);
 		
-		if(this.xp + xp_brought >= Next_level_req) {
+		if(this.XP + XP_brought >= Next_level_req) {
 			this.level ++;                             // level UP!
-			this.xp = (this.xp + xp_brought) - Next_level_req  ;  // We don't want to lose the remaining xp earned
+			this.XP = (this.XP + XP_brought) - Next_level_req  ;  // We don't want to lose the remaining XP earned
 			Random rand = new Random();
 			int skillsPoints = rand.nextInt(8) + 3; // nombre entre 3 et 10 de points de skills à distibuer (le random te fais un petit coup de stress bonus quand tu montes de lvl)
 		}
 		
 		else {
-			this.xp += xp_brought;                    //Simple addition of xp's 
+			this.XP += XP_brought;                    //Simple addition of XP's 
 			
 		}
 		
@@ -43,15 +43,16 @@ public class Player extends Character {
 	// Constructor
 	
 	//ce que tu avais écrit c'est pour le main il me semble, check les lignes ci-dessous
-	public Player(){
-		this.level = 1;
-		this.hpMax = 50;
-		this.manaMax = 50;
+	public Monsters(int level, int hpMax, int manaMax, int[]skills, int vision){
+		this.level = level;
+		this.hpMax = hpMax;
+		this.manaMax = manaMax;
+		this.vision = vision;
 		//this.skills = {0,0,0};
-		this.xp = 0;
+		this.XP = 0;
 		this.hp = this.hpMax;
 		this.mana = this.manaMax;
-		this.vision = 3; //Cercle de 3 de rayon qui grandit avec lumière
+		
 	
 	}
 		/*
